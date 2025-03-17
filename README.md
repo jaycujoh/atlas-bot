@@ -24,7 +24,7 @@
 
 ### Installation
 
-## Windows PowerShell:
+### Windows PowerShell:
 
 1. **Clone the Repository**:
    ```bash
@@ -48,6 +48,7 @@
     python main.py
    ```
 ---
+
 
 ## 💰 Donations
 
