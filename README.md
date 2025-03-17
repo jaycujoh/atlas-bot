@@ -62,12 +62,13 @@
    ```
 ---
 
-
 ## 💰 Donations
 
 If you find ATLAS helpful, consider supporting its development! Your donations help keep the bot running.
 
 🔗 [Support me on Patreon](https://www.patreon.com/c/jaycujoh)
+
+---
 
 ## Updates
 
@@ -120,10 +121,13 @@ If you find ATLAS helpful, consider supporting its development! Your donations h
 - **User Customization**:
   - Allow users to customize the analysis format (e.g., include/exclude specific sections, adjust the level of detail).
 
+---
+
 ### 📜 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
+---
 
 ### 🤝 Contributing
 
