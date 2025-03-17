@@ -6,7 +6,7 @@
 
 *Click the image to watch the video. (Subject to change)*
 
-[![Watch the video](https://img.youtube.com/vi/VhAXUMRXJEQ/0.jpg)](https://www.youtube.com/watch?v=VhAXUMRXJEQ)
+[![Watch the video](https://img.youtube.com/vi/KCKu0xiqbMo/0.jpg)](https://www.youtube.com/watch?v=KCKu0xiqbMo)
 
 ---
 
