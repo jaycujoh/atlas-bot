@@ -13,7 +13,7 @@ def generate_analysis_with_openai(player_data, replay, player_name, max_retries=
             player = next(player for player in replay.players if player.name == player_name)
             opponent = next(player for player in replay.players if player.name != player_name)
 
-            # Create a detailed prompt for the AI
+            # Creating a detailed prompt for the AI
             prompt = (
                 f"ATLAS AI ANALYSIS MODE ACTIVATED. ANALYZING REPLAY DATA FOR {player_name} ({player.play_race}) "
                 f"VERSUS {opponent.name} ({opponent.play_race}).\n\n"
@@ -44,9 +44,9 @@ def generate_analysis_with_openai(player_data, replay, player_name, max_retries=
                 f"11. If you cannot generate a response that fits the format, return 'ERROR: ANALYSIS FAILED. REBOOTING ATLAS AI...'"
             )
 
-            # Generate a response using OpenAI's GPT-4
+            # Generate a response using your AI model
             response = openai_client.chat.completions.create(
-                model="gpt-4",  # Use GPT-4
+                model="gpt-4o",  # Replace with AI model
                 messages=[
                     {"role": "system", "content": "You are ATLAS AI, a Terran tactical analysis system. Respond in a robotic, sci-fi tone."},
                     {"role": "user", "content": prompt},
