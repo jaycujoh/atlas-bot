@@ -69,6 +69,44 @@ If you find ATLAS helpful, consider supporting its development! Your donations h
 
 🔗 [Support me on Patreon](https://www.patreon.com/c/jaycujoh)
 
+## Updates
+
+### Latest Changes
+- **Removed `RESOURCES` Section**:
+  - The `RESOURCES` section has been removed from the analysis to free up character space for more detailed insights in the existing sections (`STRATEGIC SUCCESS`, `TACTICAL WEAKNESS`, etc.).
+  - This change ensures the bot focuses entirely on providing actionable advice and tactical analysis without relying on external links.
+
+- **Enhanced Data Analysis**:
+  - Improved the accuracy of replay data extraction by:
+    - Tracking **unit production** more precisely using `UnitBornEvent` and `UnitInitEvent`.
+    - Adding a `units_produced` dictionary to count the number of each unit type created during the game.
+  - Updated the AI prompt to include **specific replay data** (e.g., units produced, build order) to ensure the analysis is based on accurate information.
+  - Added validation checks to prevent the AI from making incorrect assumptions (e.g., claiming a "ling-bane" strategy was used when no Banelings were produced).
+
+### Previous Updates
+- **Added Build Order Table**:
+  - The bot now posts a formatted build order table to Discord, showing the time, supply, and units/buildings created for each player.
+  - Grouped identical units created at the same time for better readability.
+
+- **Improved Error Handling**:
+  - Added error handling for cases where the replay contains only one player or fails to load.
+  - Logged warnings for events that cannot be processed (e.g., unsupported unit types).
+
+- **Enhanced AI Analysis**:
+  - Updated the AI prompt to provide more detailed and actionable advice.
+  - Increased the `max_tokens` limit to allow for longer and more comprehensive analysis.
+
+### Future Plans
+- **Re-Adding the 'RESOURCES' section**:
+   - Integrate a web-browsing feature into the AI to dynamically fetch relevant resources (e.g., articles, videos, and guides) based on the replay analysis.
+   - Ensure the resources are accurate and up-to-date.
+   - Provide tailored recommendations for specific challenges, such as countering a particular composition or improving build order execution.
+- **Add More Detailed Metrics**:
+  - Include additional metrics such as resource collection rates, APM (actions per minute), and unit losses.
+- **Support for More Replay Types**:
+  - Extend support for team games (2v2, 3v3, etc.) and custom game modes.
+- **User Customization**:
+  - Allow users to customize the analysis format (e.g., include/exclude specific sections, adjust the level of detail).
 
 ## 📜 License
 
