@@ -16,7 +16,7 @@
 - **Build Order Breakdown**: Get a detailed breakdown of your build order and your opponent's.
 - **Tactical Insights**: Learn what you did well and where you can improve.
 - **Counter-Strategies**: Receive tailored advice on how to counter your opponent's strategy.
-- **Resource Recommendations**: Get links to up-to-date guides and videos to help you improve.
+- **Recommendations**: What to do moving forward in to future games.
 
 ---
 
