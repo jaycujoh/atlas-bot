@@ -2,9 +2,10 @@
 
 🤖 **ATLAS** is an advanced Discord bot designed to analyze StarCraft II replays using OpenAI's GPT-4. Whether you're a casual player or a competitive gamer, ATLAS provides detailed build orders, tactical insights, and personalized recommendations to help you improve your gameplay.
 
-## See it in action here!
+## See it in action!
 
-*Click the image to watch the video.*\n
+*Click the image to watch the video.*
+
 [![Watch the video](https://img.youtube.com/vi/VhAXUMRXJEQ/0.jpg)](https://www.youtube.com/watch?v=VhAXUMRXJEQ)
 
 ---
