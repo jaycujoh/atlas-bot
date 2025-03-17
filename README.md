@@ -1,4 +1,4 @@
-# 🚀 ATLAS - StarCraft II Replay Analysis Bot
+# ATLAS - StarCraft II Replay Analysis Bot
 
 🤖 **ATLAS** is an advanced Discord bot designed to analyze StarCraft II replays using OpenAI's GPT-4. Whether you're a casual player or a competitive gamer, ATLAS provides detailed build orders, tactical insights, and personalized recommendations to help you improve your gameplay.
 
@@ -29,4 +29,39 @@
    git clone https://github.com/jaycujoh/ATLAS-bot.git
    cd ATLAS-bot
    ```
+2. **Install Dependencies:**
+   ```bash
+    pip install -r requirements.txt
+   ```
+3. **Set Up Environment Variables:***
+    Create a .env file in the root directory and add your credentials:
+   ```bash
+    DISCORD_BOT_TOKEN=your-discord-bot-token
+    OPENAI_API_KEY=your-openai-api-key
+    REPLAYS_FOLDER=path/to/replays/folder
+    DISCORD_CHANNEL_ID=your-discord-channel-id
+   ```
+    Run the Bot:
+   ```bash
+    python main.py
+   ```
+---
+
+## 💰 Donations
+
+If you find ATLAS helpful, consider supporting its development! Your donations help keep the bot running.
+
+🔗 Support me on Patreon
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See LICENSE for details.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have any ideas, bug reports, or feature requests, please contact me on Discord >> jaycujoh
 
