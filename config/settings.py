@@ -1,13 +1,13 @@
 import os
 
 # Discord Bot Token
-TOKEN = "MTM1MDc5OTA5NDIyNTk2MTA1Mw.GcoDHF._knhKC3ERG6LNoMH049tHjF94fzG05y3M0ehlU"
+TOKEN = "YOUR_DISCORD_BOT_TOKEN"
 
 # OpenAI API Key
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "YOUR_OPENAPI_KEY"
 
 # Replays Folder Path
-REPLAYS_FOLDER = r"C:\Users\jamie\Documents\StarCraft II\Accounts\107387642\2-S2-1-3665189\Replays\Multiplayer"
+REPLAYS_FOLDER = r"C:\Users\YOURNAME\Documents\StarCraft II\Accounts\...\Replays\Multiplayer"
 
 # Discord Channel ID
-DISCORD_CHANNEL_ID = 1351164712645038132  # Replace with your channel ID
+DISCORD_CHANNEL_ID = 1234567891011121314  # Replace with ID of channel you want the bot to send alerts to
