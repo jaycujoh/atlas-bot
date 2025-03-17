@@ -10,4 +10,4 @@ OPENAI_API_KEY = "YOUR_OPENAPI_KEY"
 REPLAYS_FOLDER = r"C:\Users\YOURNAME\Documents\StarCraft II\Accounts\...\Replays\Multiplayer"
 
 # Discord Channel ID
-DISCORD_CHANNEL_ID = 1234567891011121314  # Replace with ID of channel you want the bot to send alerts to
+DISCORD_CHANNEL_ID =  1234 # Replace with ID of channel you want the bot to send alerts to
