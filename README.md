@@ -28,14 +28,14 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/jaycujoh/ATLAS-bot.git
-   cd ATLAS-bot
+   git clone https://github.com/jaycujoh/atlas-bot-public.git
+   cd atlas-bot-public
    ```
 2. **Install Dependencies:**
    ```bash
     pip install -r requirements.txt
    ```
-3. **Set Up Environment Variables:***
+3. **Set Up Environment Variables:**
     Edit the settings.py file in the config directory and add your credentials:
    ```bash
     DISCORD_BOT_TOKEN = "your-discord-bot-token"
@@ -43,7 +43,7 @@
     REPLAYS_FOLDER = "path/to/replays/folder"
     DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
-    Run the Bot:
+4. **Run the Bot:**
    ```bash
     python main.py
    ```
