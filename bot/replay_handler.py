@@ -1,4 +1,4 @@
-import os  # Added import
+import os
 import sc2reader
 from collections import defaultdict
 import logging
@@ -26,13 +26,20 @@ def extract_game_data(replay_path):
                 "build_order": [],  # Stores units/buildings and their creation times
                 "race": player.play_race,  # Player race
                 "supply": [],  # Stores supply at the time of unit creation
+                "resources": [],  # Stores resource collection over time
+                "combat_events": [],  # Stores combat-related events
+                "unit_deaths": [],  # Stores unit deaths
+                "ability_usage": [],  # Stores ability usage
             }
 
             logging.info(f"Processing player: {player.name} ({player.play_race})")
 
-            # Track supply over time
+            # Track supply and resources over time
             supply_events = []
+            resource_events = []
             current_supply = 0
+            current_minerals = 0
+            current_gas = 0
 
             # Iterate through events in the replay
             for event in replay.events:
@@ -40,7 +47,10 @@ def extract_game_data(replay_path):
                     # Track supply changes
                     if event.name == "PlayerStatsEvent" and event.player == player:
                         current_supply = int(event.food_used)  # Convert supply to a whole number
+                        current_minerals = event.minerals_current
+                        current_gas = event.vespene_current
                         supply_events.append((event.second, current_supply))
+                        resource_events.append((event.second, current_minerals, current_gas))
 
                     # Check if the event is related to the current player
                     if hasattr(event, 'unit') and event.unit.owner == player:
@@ -74,6 +84,12 @@ def extract_game_data(replay_path):
                                 player_data[player.name]["build_order"].append((event.second, supply_at_time, formatted_unit_name))
                                 logging.info(f"Unit Init: {formatted_unit_name}, Time: {event.second}, Supply: {supply_at_time}, Player: {player.name}")
 
+                        # Handle UnitDiedEvent (units destroyed)
+                        elif event.name == "UnitDiedEvent":
+                            unit_name = event.unit.name
+                            player_data[player.name]["unit_deaths"].append((event.second, unit_name))
+                            logging.info(f"Unit Died: {unit_name}, Time: {event.second}, Player: {player.name}")
+
                     # Handle Upgrade events (e.g., Glial Reconstitution, Lair, Hydralisk Speed)
                     if event.name == "UpgradeEvent" and event.player == player:
                         upgrade_name = event.upgrade_type_name
@@ -85,8 +101,17 @@ def extract_game_data(replay_path):
                             player_data[player.name]["build_order"].append((event.second, supply_at_time, formatted_upgrade_name))
                             logging.info(f"Upgrade Started: {formatted_upgrade_name}, Time: {event.second}, Supply: {supply_at_time}, Player: {player.name}")
 
+                    # Handle Ability usage
+                    if event.name == "AbilityEvent" and event.player == player:
+                        ability_name = event.ability_name
+                        player_data[player.name]["ability_usage"].append((event.second, ability_name))
+                        logging.info(f"Ability Used: {ability_name}, Time: {event.second}, Player: {player.name}")
+
                 except Exception as e:
                     logging.warning(f"Error processing event: {e}")
+
+            # Add resource collection data
+            player_data[player.name]["resources"] = resource_events
 
         return player_data, replay
 
