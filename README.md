@@ -4,11 +4,10 @@
 
 ## See it in action!
 
-*Click the image to watch the video.*
+*Click the image to watch the video. (Subject to change)*
 
 [![Watch the video](https://img.youtube.com/vi/VhAXUMRXJEQ/0.jpg)](https://www.youtube.com/watch?v=VhAXUMRXJEQ)
 
-*Subject to change*
 ---
 
 ## 🌟 Features
