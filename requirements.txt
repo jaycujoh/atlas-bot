@@ -1,0 +1,4 @@
+discord.py
+watchdog
+sc2reader
+openai
