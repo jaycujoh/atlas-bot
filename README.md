@@ -18,7 +18,7 @@
 
 ### Prerequisites
 
-1. **Python 3.8+**: Install from [python.org](https://www.python.org).
+1. **Python 3.13+**: Install from [python.org](https://www.python.org).
 2. **Discord Bot Token**: Create a bot on the [Discord Developer Portal](https://discord.com/developers/applications).
 3. **OpenAI API Key**: Sign up at [OpenAI](https://openai.com/api) and get an API key.
 
