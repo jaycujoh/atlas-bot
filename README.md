@@ -51,7 +51,12 @@
     REPLAYS_FOLDER = "path/to/replays/folder"
     DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
-5. **Run the Bot:**
+5. **If necessary, openai_integration.py in the bot directory and replace the GPT model:**
+   ```bash
+   Example:
+   model="gpt-4o",  # Replace with your model
+   ```
+6. **Run the Bot:**
    ```bash
     python main.py
    ```
