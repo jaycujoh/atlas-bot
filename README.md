@@ -44,14 +44,14 @@
    ```bash
     pip install -r requirements.txt
    ```
-4. **Edit settings.py in the config directory with your credentials:**
+4. **Edit 'settings.py' in the 'config' directory with your credentials:**
    ```bash
     DISCORD_BOT_TOKEN = "your-discord-bot-token"
     OPENAI_API_KEY = "your-openai-api-key"
     REPLAYS_FOLDER = "path/to/replays/folder"
     DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
-5. **If necessary, openai_integration.py in the bot directory and replace the GPT model:**
+5. **If necessary, Open 'openai_integration.py' in the 'bot' directory and replace the GPT model:**
    ```bash
    Example:
    model="gpt-4o",  # Replace with your model
@@ -77,5 +77,5 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you have any ideas, bug reports, or feature requests, please contact me on Discord >> jaycujoh
+Contributions are welcome! If you have any ideas, bug reports, or feature requests, please join my discord and I will be happy to help! [Discord](https://discord.gg/WDfzdWUUPY)
 

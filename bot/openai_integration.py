@@ -46,9 +46,9 @@ def generate_analysis_with_openai(player_data, replay, player_name, max_retries=
                 f"11. If you cannot generate a response that fits the format, return 'ERROR: ANALYSIS FAILED. REBOOTING ATLAS AI...'"
             )
 
-            # Generate a response using OpenAI's GPT-4
+            # Generate a response using OpenAI
             response = openai_client.chat.completions.create(
-                model="gpt-4o",  # Use GPT-4
+                model="gpt-4o",  # Replace with model
                 messages=[
                     {"role": "system", "content": "You are ATLAS AI, a Terran tactical analysis system. Respond in a robotic, sci-fi tone."},
                     {"role": "user", "content": prompt},
