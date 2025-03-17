@@ -51,9 +51,8 @@
     REPLAYS_FOLDER = "path/to/replays/folder"
     DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
-5. **If necessary, Open 'openai_integration.py' in the 'bot' directory and replace the GPT model:**
+5. **(Optional) Open 'openai_integration.py' in the 'bot' directory and replace the GPT model:**
    ```bash
-   Example:
    model="gpt-4o",  # Replace with your model
    ```
 6. **Run the Bot:**
@@ -73,53 +72,21 @@ If you find ATLAS helpful, consider supporting its development! Your donations h
 ## Updates
 
 ### 🚀 Latest Changes
-- **Removed `RESOURCES` Section**:
-  - The `RESOURCES` section has been removed from the analysis to free up character space for more detailed insights in the existing sections (`STRATEGIC SUCCESS`, `TACTICAL WEAKNESS`, etc.).
-  - This change ensures the bot focuses entirely on providing actionable advice and tactical analysis without relying on external links.
-
-- **Enhanced Data Analysis**:
-  - Improved the accuracy of replay data extraction by:
-    - Tracking **unit production** more precisely using `UnitBornEvent` and `UnitInitEvent`.
-    - Adding a `units_produced` dictionary to count the number of each unit type created during the game.
-  - Updated the AI prompt to include **specific replay data** (e.g., units produced, build order) to ensure the analysis is based on accurate information.
-  - Added validation checks to prevent the AI from making incorrect assumptions (e.g., claiming a "ling-bane" strategy was used when no Banelings were produced).
+- **Removed `RESOURCES` Section**: Focus on actionable advice without external links.
+- **Enhanced Data Analysis**: Tracks unit production, counts units, validates data, and updates AI prompts.
 
 ### ⏪ Previous Updates
-- **Added Build Order Table**:
-  - The bot now posts a formatted build order table to Discord, showing the time, supply, and units/buildings created for each player.
-  - Grouped identical units created at the same time for better readability.
-
-- **Improved Error Handling**:
-  - Added error handling for cases where the replay contains only one player or fails to load.
-  - Logged warnings for events that cannot be processed (e.g., unsupported unit types).
-
-- **Enhanced AI Analysis**:
-  - Updated the AI prompt to provide more detailed and actionable advice.
-  - Increased the `max_tokens` limit to allow for longer and more comprehensive analysis.
+- **Added Build Order Table**: Formatted table with grouped units.
+- **Improved Error Handling**: Handles single-player replays and logs unsupported units.
+- **Enhanced AI Analysis**: Detailed prompts and increased `max_tokens`.
 
 ### 🔮 Future Plans
-- **Re-Adding the `RESOURCES` Section**:
-  - Integrate a **web-browsing feature** into the AI to dynamically fetch relevant resources (e.g., articles, videos, and guides) based on the replay analysis.
-  - Ensure the resources are **accurate and up-to-date** by linking to trusted sources like YouTube, TeamLiquid, and Reddit.
-  - Provide tailored recommendations for specific challenges, such as countering a particular composition or improving build order execution.
-
-- **Adding Commands**:
-  - Introduce **user commands** to allow for more interactive and customizable analysis.
-  - Examples:
-    - `!analyze <replay_file>`: Analyze a specific replay file.
-    - `!buildorder <player_name>`: Display the build order for a specific player.
-    - `!resources <topic>`: Fetch resources for a specific topic (e.g., countering a particular strategy).
-
-- **Creating an .exe File**:
-  - Develop a standalone **.exe application** for easier installation and use, especially for users who are not familiar with Python or command-line tools.
-  - This will make ATLAS more accessible to a wider audience.
-
-- **Add More Detailed Metrics**:
-  - Include additional metrics such as resource collection rates, APM (actions per minute), and unit losses.
-- **Support for More Replay Types**:
-  - Extend support for team games (2v2, 3v3, etc.) and custom game modes.
-- **User Customization**:
-  - Allow users to customize the analysis format (e.g., include/exclude specific sections, adjust the level of detail).
+- **Re-Adding `RESOURCES` Section**: Web-browsing for tailored recommendations.
+- **Adding Commands**: `!analyze`, `!buildorder`, `!resources`.
+- **Creating an .exe File**: Easier installation for non-coders.
+- **Add More Metrics**: Resource rates, APM, unit losses.
+- **Support More Replay Types**: Team games (2v2, 3v3), custom modes.
+- **User Customization**: Adjust analysis format and detail level.
 
 ---
 
