@@ -6,7 +6,7 @@ from config.settings import OPENAI_API_KEY
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 def generate_analysis_with_openai(player_data, replay, player_name, max_retries=3):
-    """Generates an analysis of the replay using OpenAI's GPT-4."""
+    """Generates an analysis of the replay using your AI model"""
     retries = 0
     while retries < max_retries:
         try:
