@@ -33,27 +33,30 @@ def generate_analysis_with_openai(player_data, replay, player_name, max_retries=
                 f"3. [Resource 3 Title] - [Resource 3 URL]\n\n"
                 f">>> ANALYSIS COMPLETE. END OF REPORT.\n\n"
                 f"ADDITIONAL INSTRUCTIONS:\n"
-                f"1. Ensure the analysis is concise and directly addresses the replay data.\n"
+                f"1. Ensure the analysis is concise but detailed, directly addressing the replay data.\n"
                 f"2. Provide specific, actionable advice for {player_name} to improve.\n"
                 f"3. Include up-to-date resources (2024/2025) related to the counter-strategy and tactical weakness.\n"
-                f"4. Do not deviate from the provided format. Any deviation will result in an error.\n"
-                f"5. Keep the subject headers (e.g., STRATEGIC SUCCESS, TACTICAL WEAKNESS) in CAPITAL LETTERS.\n"
-                f"6. The details of each subject must remain in normal sentence case.\n"
-                f"7. Do not add extra sections, comments, or explanations outside the provided format.\n"
-                f"8. Do not use bullet points or numbered lists outside the RESOURCES section.\n"
-                f"9. Do not include any additional text before or after the report.\n"
-                f"10. Ensure there is a BLANK LINE between each section (e.g., between STRATEGIC SUCCESS and TACTICAL WEAKNESS).\n"
-                f"11. If you cannot generate a response that fits the format, return 'ERROR: ANALYSIS FAILED. REBOOTING ATLAS AI...'"
+                f"4. Resources must be from trusted domains such as YouTube, TeamLiquid, Reddit, or other reputable StarCraft II community sites.\n"
+                f"5. Do not make up URLs or provide links to non-existent websites.\n"
+                f"6. If no valid resources are available, omit the RESOURCES section entirely.\n"
+                f"7. Do not deviate from the provided format. Any deviation will result in an error.\n"
+                f"8. Keep the subject headers (e.g., STRATEGIC SUCCESS, TACTICAL WEAKNESS) in CAPITAL LETTERS.\n"
+                f"9. The details of each subject must remain in normal sentence case.\n"
+                f"10. Do not add extra sections, comments, or explanations outside the provided format.\n"
+                f"11. Do not use bullet points or numbered lists outside the RESOURCES section.\n"
+                f"12. Do not include any additional text before or after the report.\n"
+                f"13. Ensure there is a BLANK LINE between each section (e.g., between STRATEGIC SUCCESS and TACTICAL WEAKNESS).\n"
+                f"14. If you cannot generate a response that fits the format, return 'ERROR: ANALYSIS FAILED. REBOOTING ATLAS AI...'"
             )
 
-            # Generate a response using OpenAI
+            # Generate a response using OpenAI's GPT-4
             response = openai_client.chat.completions.create(
-                model="gpt-4o",  # Replace with model
+                model="gpt-4",  # Use GPT-4
                 messages=[
                     {"role": "system", "content": "You are ATLAS AI, a Terran tactical analysis system. Respond in a robotic, sci-fi tone."},
                     {"role": "user", "content": prompt},
                 ],
-                max_tokens=600,  # Adjust as needed
+                max_tokens=1000,  # Increased from 600 to allow for more detailed analysis
                 temperature=0.7,
             )
 
