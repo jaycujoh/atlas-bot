@@ -51,15 +51,13 @@
 
 If you find ATLAS helpful, consider supporting its development! Your donations help keep the bot running.
 
-🔗 Support me on Patreon
+🔗 [Support me on Patreon](https://www.patreon.com/c/jaycujoh)
 
----
 
 ## 📜 License
 
 This project is licensed under the MIT License. See LICENSE for details.
 
----
 
 ## 🤝 Contributing
 
