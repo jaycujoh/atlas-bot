@@ -35,21 +35,23 @@
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/jaycujoh/atlas-bot-public.git
+   ```
+2. **Navigate to the directory:**
+   ```bash
    cd atlas-bot-public
    ```
-2. **Install Dependencies:**
+3. **Install Dependencies:**
    ```bash
     pip install -r requirements.txt
    ```
-3. **Set Up Environment Variables:**
-    Edit the settings.py file in the config directory and add your credentials:
+4. **Edit settings.py in the config directory with your credentials:**
    ```bash
     DISCORD_BOT_TOKEN = "your-discord-bot-token"
     OPENAI_API_KEY = "your-openai-api-key"
     REPLAYS_FOLDER = "path/to/replays/folder"
     DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
-4. **Run the Bot:**
+5. **Run the Bot:**
    ```bash
     python main.py
    ```
@@ -65,7 +67,7 @@ If you find ATLAS helpful, consider supporting its development! Your donations h
 
 ## 📜 License
 
-This project is licensed under the MIT License. See LICENSE for details.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 
 ## 🤝 Contributing
