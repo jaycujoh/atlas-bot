@@ -24,6 +24,8 @@
 
 ### Installation
 
+## Windows PowerShell:
+
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/jaycujoh/ATLAS-bot.git
@@ -34,12 +36,12 @@
     pip install -r requirements.txt
    ```
 3. **Set Up Environment Variables:***
-    Create a .env file in the root directory and add your credentials:
+    Edit the settings.py file in the config directory and add your credentials:
    ```bash
-    DISCORD_BOT_TOKEN=your-discord-bot-token
-    OPENAI_API_KEY=your-openai-api-key
-    REPLAYS_FOLDER=path/to/replays/folder
-    DISCORD_CHANNEL_ID=your-discord-channel-id
+    DISCORD_BOT_TOKEN = "your-discord-bot-token"
+    OPENAI_API_KEY = "your-openai-api-key"
+    REPLAYS_FOLDER = "path/to/replays/folder"
+    DISCORD_CHANNEL_ID = "your-discord-channel-id"
    ```
     Run the Bot:
    ```bash
