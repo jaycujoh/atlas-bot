@@ -72,6 +72,22 @@ ATLAS is an **open-source**, AI-powered Discord bot designed to help StarCraft I
    ```
 ---
 
+## 🚀 Hosted Version (No AI)
+
+For users who prefer a ready-to-use solution without AI functionality, a **hosted version** of ATLAS is available. This version focuses on replay parsing and build order extraction.
+
+### **Features**:
+- **Replay Upload**: Upload a replay file, and the bot will automatically process it.
+- **Build Order Table**: The bot will post a formatted build order table showing time, supply, and units/buildings created.
+- **No AI Analysis**: This version does not include AI-generated insights or recommendations.
+
+### **How to Use**:
+1. Invite the bot to your server using [this link](insert-invite-link-here).
+2. Upload a replay file to the designated channel.
+3. The bot will post the build order table.
+
+---
+
 ## 💰 Donations
 
 If you find ATLAS helpful, consider supporting its development! Your donations help keep the bot running.
