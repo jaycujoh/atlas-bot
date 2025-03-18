@@ -82,7 +82,7 @@ For users who prefer a ready-to-use solution without AI functionality, a **hoste
 - **No AI Analysis**: This version does not include AI-generated insights or recommendations.
 
 ### **How to Use**:
-1. Invite the bot to your server using [this link](insert-invite-link-here).
+1. Invite the bot to your server using [this link](https://discord.com/oauth2/authorize?client_id=1350799094225961053).
 2. Upload a replay file to the designated channel.
 3. The bot will post the build order table.
 
