@@ -6,7 +6,7 @@ ATLAS is an **open-source**, AI-powered Discord bot designed to help StarCraft I
 
 ## See it in action!
 
-*Click the image to watch the video. (Subject to change)*
+*Click the image to watch the video. (v1.0.0)*
 
 [![Watch the video](https://img.youtube.com/vi/KCKu0xiqbMo/0.jpg)](https://www.youtube.com/watch?v=KCKu0xiqbMo)
 
