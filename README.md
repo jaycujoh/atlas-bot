@@ -12,8 +12,7 @@ ATLAS is an **open-source**, AI-powered Discord bot designed to help StarCraft I
 
 ### **Current Approach**
 - **Open-Source**: The bot is completely open-source, meaning anyone can download, modify, and host it themselves using their own OpenAI API key.
-- **Future Plans**: If ATLAS gains enough traction, I plan to introduce a **hosted version** of the bot with additional features and support for those who prefer a ready-to-use solution.
-
+- **Future Plans**: If ATLAS gains enough traction, I plan to introduce AI to the **hosted version** of the bot amongst other features.
 ### **How You Can Help**
 - **Star the Repo**: Show your support by starring the repository!
 - **Contribute**: If you’re a developer, feel free to fork the repo and submit pull requests.
